@@ -59,4 +59,132 @@ body {
   .shadowed-border  {
     @apply border shadow-lg
   }
+
+  .animate-fade-in {
+    @apply animate-[fadeIn_0.5s_ease-in-out];
+  }
+
+  .card-hover {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .animate-slide-in {
+    @apply animate-[slideIn_0.5s_ease-in-out];
+  }
+
+  @keyframes slideIn {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+
+  .animate-slide-in-top {
+    @apply animate-[slideInTop_0.5s_ease-in-out];
+  }
+  @keyframes slideInTop {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide In From Left */
+  .animate-slide-in-left {
+    @apply animate-[slideInLeft_0.5s_ease-in-out];
+  }
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  /* Slide In From Right */
+  .animate-slide-in-right {
+    @apply animate-[slideInRight_0.5s_ease-in-out];
+  }
+  @keyframes slideInRight {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .animate-staggered-slide-in {
+    --delay-step: 0.1s; /* Adjust the step as needed */
+  }
+
+  /* Staggered Slide In */
+  .animate-staggered-slide-in > * {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: staggeredSlideIn 0.5s ease-in-out forwards;
+    animation-delay: calc(var(--delay-step, 0.1s) * (var(--child-index, 0)));
+  }
+
+  /* Automatically assign --child-index using nth-child */
+  .animate-staggered-slide-in > *:nth-child(n) {
+    --child-index: n; /* Automatically set the child index */
+  }
+
+  @keyframes staggeredSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Bounce Slide In */
+  .animate-bounce-slide-in {
+    @apply animate-[bounceSlideIn_0.7s_ease-out];
+  }
+  @keyframes bounceSlideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px) scale(0.9);
+    }
+    70% {
+      opacity: 0.7;
+      transform: translateY(-10px) scale(1.05);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  /* ========================================= */
 }
+
+ 
