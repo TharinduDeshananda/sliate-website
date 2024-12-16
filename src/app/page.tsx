@@ -28,7 +28,7 @@ export default function HomePage() {
               />
             </div>
             {/* contact info */}
-            <div className="flex flex-col justify-end gap-y-2 text-xs sm:text-sm md:text-base text-white">
+            <div className="flex flex-col justify-end gap-y-2 text-xs sm:text-sm  text-white">
               <div className="">
                 <h1 className="">(800) 123 1234</h1>
                 <h1 className="">(800) 123 1235</h1>
