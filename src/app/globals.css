@@ -28,7 +28,7 @@ body {
 
 @layer components {
   .main-content {
-    @apply w-full max-w-6xl border main-rounded mx-auto px-5 py-5
+    @apply w-full max-w-6xl  main-rounded mx-auto px-5 py-5
 
   }
   .card {

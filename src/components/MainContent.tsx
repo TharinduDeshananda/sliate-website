@@ -10,6 +10,7 @@ export default function MainContent() {
     // </div>
     <div className="main-content flex flex-row flex-wrap lg:flex-nowrap justify-center">
       <div className="flex-1">
+        <h1 className="text-subheading text-center my-5">Latest Events</h1>
         <div className="w-full flex flex-row gap-2 flex-wrap justify-center min-w-[250px]">
           <NewsCard {...getData()[0]} />
           <NewsCard {...getData()[0]} />
