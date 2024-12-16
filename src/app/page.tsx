@@ -7,6 +7,7 @@ import MissionCard from "@/components/MissionCard";
 import MainContent from "@/components/MainContent";
 import ImageGalleryComp from "@/components/ImageGalleryComp";
 import NavComps from "@/components/NavComps";
+import Footer from "@/components/FooterComp";
 
 export default function HomePage() {
   return (
@@ -58,6 +59,7 @@ export default function HomePage() {
       <MainContent />
       <ImageGalleryComp />
       <NavComps />
+      <Footer />
     </div>
   );
 }
