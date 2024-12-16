@@ -74,9 +74,12 @@ export default function MissionCard() {
           className="text-2xl text-center font-bold"
           style={{ color: data[show].textColor }}
         >
-          Our Mission
+          {data[show].title}
         </h1>
-        <p className="text-center " style={{ color: data[show].textColor }}>
+        <p
+          className="text-center text-sm font-bold"
+          style={{ color: data[show].textColor }}
+        >
           {data[show].message}
         </p>
       </div>
