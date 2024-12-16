@@ -4,6 +4,7 @@ import mainImage from "../../public/main.jpg";
 import mainLogoImage from "../../public/main-logo.png";
 import logoImage from "../../public/SLIATE_LOGO.png";
 import MissionCard from "@/components/MissionCard";
+import MainContent from "@/components/MainContent";
 
 export default function HomePage() {
   return (
@@ -52,6 +53,7 @@ export default function HomePage() {
       {/* top background container end */}
 
       <MissionCard />
+      <MainContent />
     </div>
   );
 }
