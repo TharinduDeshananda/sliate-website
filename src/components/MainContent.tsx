@@ -3,8 +3,19 @@ import NewsCard, { NewsCardDataType } from "./NewsCard";
 
 export default function MainContent() {
   return (
-    <div className="main-content">
-      <NewsCard {...getData()[0]} />
+    // <div className="main-content">
+    //   <NewsCard {...getData()[0]} />
+    // </div>
+    <div className="main-content flex flex-row flex-wrap lg:flex-nowrap justify-center">
+      <div className="flex-1 flex flex-row gap-2 flex-wrap justify-center min-w-[250px]">
+        <NewsCard {...getData()[0]} />
+        <NewsCard {...getData()[0]} />
+        <NewsCard {...getData()[0]} />
+        <NewsCard {...getData()[0]} />
+        <NewsCard {...getData()[0]} />
+        <NewsCard {...getData()[0]} />
+      </div>
+      <div className="min-w-[250px] bg-green-500 min-h-[300px]"></div>
     </div>
   );
 }
