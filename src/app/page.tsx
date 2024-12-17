@@ -9,6 +9,7 @@ import ImageGalleryComp from "@/components/ImageGalleryComp";
 import NavComps from "@/components/NavComps";
 import Footer from "@/components/FooterComp";
 import CorousalComp from "@/components/CorousalComp";
+import CounterComp from "@/components/CounterComp";
 
 export default function HomePage() {
   return (
@@ -56,7 +57,7 @@ export default function HomePage() {
       </div>
       {/* top background container end */}
       <CorousalComp />
-
+      <CounterComp />
       <MissionCard />
       <MainContent />
       <ImageGalleryComp />

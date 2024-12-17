@@ -118,8 +118,8 @@ const Pagination: React.FC<PaginationProps> = ({
         className={`
           ${
             page === currentPage
-              ? "bg-blue-600 text-white"
-              : "hover:bg-blue-600 hover:text-white"
+              ? "bg-blue-600 dark:bg-gray-500 text-white"
+              : "hover:bg-blue-600 hover:dark:bg-gray-500 hover:text-white"
           }
           w-8 h-8 sm:w-10 sm:h-10 p-0 text-xs sm:text-base
         `}

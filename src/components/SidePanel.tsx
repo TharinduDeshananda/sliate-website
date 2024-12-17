@@ -3,16 +3,49 @@ import React from "react";
 
 export default function SidePanel() {
   return (
-    <div className="w-full flex flex-col  gap-y-2">
-      <SlidePanelItem
-        title="LMSdsfkdpsfk ksfkpskdfpoksd fpkspfkpskfpskdfpks fksdpfkpd kfpkf"
-        backgroundImage="/main.jpg"
-        link=""
+    <div className="w-full flex flex-col  gap-y-4">
+      <SidePanelMenuContainer
+        title="Quick Links"
+        visible={true}
+        items={[
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "LMS",
+          },
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "Library",
+          },
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "Counselling",
+          },
+        ]}
       />
-      <SlidePanelItem title="LMS" backgroundImage="/main.jpg" link="" />
-      <SlidePanelItem title="LMS" backgroundImage="/main.jpg" link="" />
-      <SlidePanelItem title="LMS" backgroundImage="/main.jpg" link="" />
-      <SlidePanelItem title="LMS" backgroundImage="/main.jpg" link="" />
+      <SidePanelMenuContainer
+        title="Exams"
+        visible={true}
+        items={[
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "Year one",
+          },
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "Year two",
+          },
+          {
+            backgroundImage: "/main.jpg",
+            link: "",
+            title: "Laboratory",
+          },
+        ]}
+      />
     </div>
   );
 }
@@ -22,9 +55,30 @@ type SlidePanelItemType = {
   link: string;
   backgroundImage: string;
 };
+
+type MenuContainerType = {
+  title: string;
+  visible: boolean;
+  items: SlidePanelItemType[];
+};
+function SidePanelMenuContainer(prop: MenuContainerType) {
+  return (
+    <div className="w-full rounded-xl overflow-hidden gap-y-1 flex flex-col">
+      <h1 className="bg-blue-500 dark:bg-gray-600 text-white text-center w-full py-2 ">
+        {prop.title}
+      </h1>
+      <div className="w-full flex flex-col gap-y-1">
+        {prop?.items?.map((i) => (
+          <SlidePanelItem {...i} key={i.title} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
 function SlidePanelItem(prop: SlidePanelItemType) {
   return (
-    <div className="shadow-lg card-hover cursor-pointer w-full overflow-ellipsis relative px-2 py-5 rounded-xl overflow-hidden animate-staggered-slide-in">
+    <div className="shadow-lg card-hover cursor-pointer  w-full overflow-ellipsis relative px-2 py-5  overflow-hidden animate-staggered-slide-in">
       <Image
         fill
         alt={`${prop.title} image`}

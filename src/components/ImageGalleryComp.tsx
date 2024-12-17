@@ -33,7 +33,7 @@ export default function ImageGalleryComp() {
           }`}
         />
       ))}
-      <div className="p-5  rounded-lg z-20 cursor-pointer card-hover bg-blue-600 text-white">
+      <div className="p-5  rounded-lg z-20 cursor-pointer card-hover bg-blue-600 dark:bg-gray-500 text-white">
         <h1>View Gallery</h1>
       </div>
     </div>

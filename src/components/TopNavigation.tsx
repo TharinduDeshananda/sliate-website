@@ -41,11 +41,11 @@ function NavItem({ link, title, active = false, items = [] }: NavItemType) {
           {title}
         </div>
         {/* Default content. Moves down on hover exit */}
-        <div className="absolute w-full h-full bg-blue-700 text-white px-5 py-3 top-0 transition-all duration-300 group-hover:top-full">
+        <div className="absolute w-full h-full bg-blue-700 dark:bg-gray-500 text-white px-5 py-3 top-0 transition-all duration-300 group-hover:top-full">
           {title}
         </div>
         {/* Hidden content. Moves up on hover */}
-        <div className="absolute w-full h-full bg-white text-blue-700 px-5 py-3 top-full transition-all duration-300 group-hover:top-0">
+        <div className="absolute w-full h-full bg-white text-blue-700 dark:text-gray-500 px-5 py-3 top-full transition-all duration-300 group-hover:top-0">
           {title}
         </div>
       </Link>
