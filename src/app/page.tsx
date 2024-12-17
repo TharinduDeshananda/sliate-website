@@ -8,12 +8,13 @@ import MainContent from "@/components/MainContent";
 import ImageGalleryComp from "@/components/ImageGalleryComp";
 import NavComps from "@/components/NavComps";
 import Footer from "@/components/FooterComp";
+import CorousalComp from "@/components/CorousalComp";
 
 export default function HomePage() {
   return (
     <div className="w-full">
       {/* top background container start */}
-      <div className="w-full h-[300px] relative bg-green-50 mb-14">
+      <div className="w-full h-[300px] relative bg-green-50">
         <Image src={mainImage} alt="Main Image" fill objectFit="cover" />
         {/* Dark tint overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-50 z-10" />
@@ -54,6 +55,7 @@ export default function HomePage() {
         <TopNavigation />
       </div>
       {/* top background container end */}
+      <CorousalComp />
 
       <MissionCard />
       <MainContent />

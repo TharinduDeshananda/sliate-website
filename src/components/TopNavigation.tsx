@@ -3,7 +3,7 @@ import React from "react";
 
 export default function TopNavigation() {
   return (
-    <div className="hidden w-full sm:flex flex-row items-center absolute top-full left-0 text-xs">
+    <div className="hidden w-full sm:flex flex-row items-center absolute top-full left-0 text-xs z-20">
       <NavItem link="#" title="Home" />
       <NavItem link="#" title="About" />
       <NavItem link="#" title="News" />
