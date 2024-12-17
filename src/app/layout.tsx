@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeSwitch from "@/components/ThemeSwitch";
+import AnimatedBackground from "@/components/AnimatedBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -31,7 +32,8 @@ export default function RootLayout({
       >
         <ThemeProvider>
           <ThemeSwitch />
-          <>{children}</>
+          {/* <AnimatedBackground /> */}
+          {children}
         </ThemeProvider>
       </body>
     </html>
