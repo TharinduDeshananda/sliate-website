@@ -10,6 +10,7 @@ import NavComps from "@/components/NavComps";
 import Footer from "@/components/FooterComp";
 import CorousalComp from "@/components/CorousalComp";
 import CounterComp from "@/components/CounterComp";
+import AnthemComp from "@/components/AnthemComp";
 
 export default function HomePage() {
   return (
@@ -62,6 +63,7 @@ export default function HomePage() {
       <MainContent />
       <ImageGalleryComp />
       <NavComps />
+      <AnthemComp />
       <Footer />
     </div>
   );
