@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { PlayIcon, PauseIcon, StopIcon } from "@heroicons/react/24/outline";
 import { ArrowPathIcon } from "@heroicons/react/24/solid";
+// import Lottie from "lottie-react";
 
 export default function AnthemComp() {
   const [lang, setLang] = useState<"SINHALA" | "TAMIL">("SINHALA");
@@ -9,6 +10,24 @@ export default function AnthemComp() {
     "PAUSED"
   );
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  // const [animationData, setAnimationData] = useState(null);
+
+  // useEffect(() => {
+  //   const fetchAnimationData = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://cdn.lottielab.com/l/CfnuTWsBMid2uE.json"
+  //       );
+  //       const data = await response.json();
+  //       setAnimationData(data);
+  //     } catch (error) {
+  //       console.error("Failed to load animation:", error);
+  //     }
+  //   };
+
+  //   fetchAnimationData();
+  // }, []);
 
   // Audio sources
   const audioSources = {
@@ -88,9 +107,17 @@ export default function AnthemComp() {
       ${status === "PLAYING" ? "animate-rainbow-border" : ""}
     `}
     >
+      {/* {animationData && (
+        <Lottie
+          className="absolute inset-0 z-0 opacity-50 "
+          animationData={animationData}
+          loop={true}
+          autoplay={true}
+        />
+      )} */}
       <audio ref={audioRef} src={lang ? audioSources[lang] : undefined} />
 
-      <div className="absolute flex flex-row gap-x-2 right-0 top-0 py-2 px-2">
+      <div className="absolute flex flex-row gap-x-2 right-0 top-0 py-2 px-2 z-10">
         <button
           className="bg-yellow-400 hover:bg-yellow-500 text-white px-2 py-1 rounded-lg"
           onClick={() => setLang("SINHALA")}
