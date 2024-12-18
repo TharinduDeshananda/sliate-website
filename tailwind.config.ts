@@ -9,17 +9,35 @@ export default {
   theme: {
     extend: {
       animation: {
-        float: 'floatUp 10s linear, fadeOut 10s linear',
+        'rainbow-border': 'rainbow 2s linear infinite'
       },
       keyframes: {
-        floatUp: {
-          '0%': { transform: 'translateY(100%)' },
-          '100%': { transform: 'translateY(-100%)' },
-        },
-        fadeOut: {
-          '0%': { opacity: "1" },
-          '100%': { opacity: "0" },
-        },
+        rainbow: {
+          '0%': { 
+            borderColor: 'red',
+            boxShadow: '0 0 10px red'
+          },
+          '20%': { 
+            borderColor: 'orange',
+            boxShadow: '0 0 10px orange'
+          },
+          '40%': { 
+            borderColor: 'yellow',
+            boxShadow: '0 0 10px yellow'
+          },
+          '60%': { 
+            borderColor: 'green',
+            boxShadow: '0 0 10px green'
+          },
+          '80%': { 
+            borderColor: 'blue',
+            boxShadow: '0 0 10px blue'
+          },
+          '100%': { 
+            borderColor: 'purple',
+            boxShadow: '0 0 10px purple'
+          }
+        }
       },
       colors: {
         background: "var(--background)",
