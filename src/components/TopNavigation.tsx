@@ -20,7 +20,7 @@ export default function TopNavigation() {
       <NavItem link="#" title="Institutions" />
       <NavItem link="contact" title="Contact" />
       <NavItem link="#" title="Internal Circulars" />
-      <NavItem link="#" title="FAQ" />
+      <NavItem link="faq" title="FAQ" />
       <NavItem link="#" title="Vacancies" />
     </div>
   );
