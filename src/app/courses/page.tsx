@@ -87,7 +87,7 @@ function getCourses(): CourseType[] {
       id: 2,
       title: "Business Administration",
       description:
-        "Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.",
+        "Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.",
       imageUrl: "https://via.placeholder.com/400",
       years: 3,
     },
