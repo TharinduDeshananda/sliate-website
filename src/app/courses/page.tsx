@@ -60,7 +60,7 @@ export default function CoursesPage() {
               <p className="text-gray-800 dark:text-gray-200 line-clamp-3 mb-4">
                 {course.description}
               </p>
-              <Link href={"#"}>
+              <Link href={`/courses/${course.id}`}>
                 <button className="bg-blue-600 text-white card-hover hover:bg-blue-500 px-5 py-2 rounded-lg">
                   View
                 </button>
