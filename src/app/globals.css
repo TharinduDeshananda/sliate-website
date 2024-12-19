@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+.interactive {
+  fill: #a099ef;
+  stroke: white;
+}
+/* Hover effect for SVG elements */
+.interactive:hover {
+  cursor: pointer;
+  fill: #eae8fc;
+  transform: scale(1.01);
+  transition: all 0.5s;
+  stroke: white;
+  stroke-width: 4;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* Selected circle effect */
+.selected {
+  stroke: white;
+  stroke-width: 4;
+  opacity: 1;
+}
+
 :root {
   --background-light: #ffffff;
   --foreground-light: #171717;
@@ -23,7 +46,7 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
-  @apply bg-gray-100 dark:bg-gray-800
+  @apply bg-gray-100 dark:bg-gray-800;
 }
 
 @layer components {
@@ -39,14 +62,14 @@ body {
 }
 
 @layer utilities {
-  .color-primary  {
-    @apply dark:bg-gray-500 bg-blue-500 text-white
+  .color-primary {
+    @apply dark:bg-gray-500 bg-blue-500 text-white;
   }
   .color-bg-primary {
-    @apply bg-white dark:bg-gray-500 text-gray-600 dark:text-gray-200
+    @apply bg-white dark:bg-gray-500 text-gray-600 dark:text-gray-200;
   }
   .color-text-primary {
-    @apply text-gray-500 dark:text-white
+    @apply text-gray-500 dark:text-white;
   }
 
   .main-rounded {
