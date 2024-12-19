@@ -4,6 +4,8 @@ import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeSwitch from "@/components/ThemeSwitch";
 import AnimatedBackground from "@/components/AnimatedBackground";
+import HeaderComp from "@/components/HeaderComp";
+import Footer from "@/components/FooterComp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +35,11 @@ export default function RootLayout({
         <ThemeProvider>
           <ThemeSwitch />
           {/* <AnimatedBackground /> */}
-          {children}
+          <div>
+            <HeaderComp />
+            {children}
+            <Footer />
+          </div>
         </ThemeProvider>
       </body>
     </html>
