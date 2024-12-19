@@ -8,7 +8,7 @@ export default function TopNavigation() {
       <NavItem link="/about" title="About" />
       <NavItem link="/news" title="News" />
       <NavItem
-        link="#"
+        link="courses"
         title="Courses"
         items={[
           { link: "", title: "Science" },
