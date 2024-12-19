@@ -62,7 +62,7 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="flex flex-row flex-wrap max-w-4xl p-3 sm:p-6 md:p-10 rounded-lg mx-auto w-full bg-gray-950 my-10">
+            <div className="flex flex-row flex-wrap max-w-4xl p-3 sm:p-6 md:p-10 rounded-lg mx-auto w-full text-gray-300 bg-gray-950 my-10">
               <div className="flex flex-col gap-x-2">
                 <h1>Contact</h1>
                 <div className="">
