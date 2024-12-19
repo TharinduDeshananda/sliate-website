@@ -37,7 +37,7 @@ export default function FAQPage() {
   };
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-800 min-h-screen py-8 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 dark:bg-gray-800 min-h-screen py-8 px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-blue-500 dark:text-gray-500 mb-8 text-center my-10">
           Frequently Asked Questions

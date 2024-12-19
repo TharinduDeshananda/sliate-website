@@ -21,7 +21,7 @@ export default function TopNavigation() {
       <NavItem link="contact" title="Contact" />
       <NavItem link="#" title="Internal Circulars" />
       <NavItem link="faq" title="FAQ" />
-      <NavItem link="#" title="Vacancies" />
+      <NavItem link="vacancies" title="Vacancies" />
     </div>
   );
 }
