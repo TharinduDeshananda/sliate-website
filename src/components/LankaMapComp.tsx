@@ -12,6 +12,7 @@ export default function LankaMapComp() {
       // and arrays of institute names as values
       Object.entries(getDistrictNames()).forEach(([id, names]) => {
         const path = svg.querySelector(`#${id}`) as SVGPathElement;
+
         if (path) {
           const bbox = path.getBBox();
 
@@ -26,11 +27,24 @@ export default function LankaMapComp() {
             textElement.setAttribute(
               "y",
               (bbox.y + bbox.height / 2 + index * 12).toString()
-            ); // Adjust `12` for vertical spacing between lines
+            ); // Adjust `12` for vertical spacing
             textElement.setAttribute("text-anchor", "middle");
-            textElement.setAttribute("pointer-events", "none");
             textElement.setAttribute("font-size", "10");
+            textElement.setAttribute("class", "hoverable-text");
             textElement.textContent = name;
+
+            // Add hover and click effects
+            textElement.addEventListener("mouseover", () => {
+              path.classList.add("highlighted-path");
+            });
+
+            textElement.addEventListener("mouseout", () => {
+              path.classList.remove("highlighted-path");
+            });
+
+            textElement.addEventListener("click", () => {
+              alert(`Clicked on ${name}`);
+            });
 
             svg.appendChild(textElement);
           });

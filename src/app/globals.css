@@ -25,6 +25,26 @@
   opacity: 1;
 }
 
+.highlighted-path {
+  cursor: pointer;
+  fill: #eae8fc;
+  transform: scale(1.01);
+  transition: all 0.5s;
+  stroke: white;
+  stroke-width: 4;
+  opacity: 1;
+  z-index: 100;
+}
+
+/* Pointer effect for hoverable text */
+.hoverable-text {
+  cursor: pointer;
+  font-size: 12px;
+  fill: blue;
+  text-decoration: underline;
+}
+
+
 :root {
   --background-light: #ffffff;
   --foreground-light: #171717;
