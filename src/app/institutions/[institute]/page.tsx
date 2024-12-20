@@ -22,7 +22,7 @@ const SingleInstitutePage = () => {
         {/* Branch Title and Description */}
         <div className="mb-8 z-20">
           <h2 className="text-3xl font-semibold text-blue-500 dark:text-gray-500 mb-4">
-            About Our Branch
+            About Our Institute
           </h2>
           <p className="text-gray-700 dark:text-gray-400">
             Welcome to the [Branch Name] branch of our institute. We are
@@ -89,11 +89,11 @@ const SingleInstitutePage = () => {
             {activeTab === "facilities" && (
               <div>
                 <h3 className="text-xl font-semibold text-blue-500 dark:text-gray-300 mb-4">
-                  Branch Facilities
+                  Institute Facilities
                 </h3>
                 <p className="text-gray-700 dark:text-gray-400">
-                  Our branch offers modern classrooms, a fully equipped library,
-                  computer labs, and more.
+                  Our institute offers modern classrooms, a fully equipped
+                  library, computer labs, and more.
                 </p>
               </div>
             )}
