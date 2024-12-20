@@ -82,7 +82,7 @@ function getCourses(): CourseType[] {
       title: "Computer Science",
       description:
         "Dive into the world of algorithms, data structures, and software development with our comprehensive Computer Science program.",
-      imageUrl: "https://via.placeholder.com/400",
+      imageUrl: "/cs.jpg",
       years: 4,
     },
     {
@@ -90,7 +90,7 @@ function getCourses(): CourseType[] {
       title: "Business Administration",
       description:
         "Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.",
-      imageUrl: "https://via.placeholder.com/400",
+      imageUrl: "/ba.jpg",
       years: 3,
     },
     {
@@ -98,7 +98,7 @@ function getCourses(): CourseType[] {
       title: "Mechanical Engineering",
       description:
         "Explore the principles of mechanics, thermodynamics, and materials science in our Mechanical Engineering program.",
-      imageUrl: "https://via.placeholder.com/400",
+      imageUrl: "me.jpg",
       years: 4,
     },
     {
@@ -106,7 +106,7 @@ function getCourses(): CourseType[] {
       title: "Psychology",
       description:
         "Understand the complexities of human behavior and mental processes with our insightful Psychology course.",
-      imageUrl: "https://via.placeholder.com/400",
+      imageUrl: "psycho.jpg",
       years: 3,
     },
     {
@@ -114,7 +114,7 @@ function getCourses(): CourseType[] {
       title: "Architecture",
       description:
         "Design innovative structures and learn architectural principles in our creative Architecture program.",
-      imageUrl: "https://via.placeholder.com/400",
+      imageUrl: "arch.jpg",
       years: 5,
     },
   ];
