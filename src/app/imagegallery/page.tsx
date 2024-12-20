@@ -8,10 +8,14 @@ import lgThumbnail from "lightgallery/plugins/thumbnail";
 import lgZoom from "lightgallery/plugins/zoom";
 
 const images = [
-  { id: 1, src: "/education1.jpg", alt: "Gallery Image 1" },
-  { id: 2, src: "/education2.jpg", alt: "Gallery Image 2" },
-  { id: 3, src: "/education3.jpg", alt: "Gallery Image 3" },
-  { id: 4, src: "/education1.jpg", alt: "Gallery Image 4" },
+  { id: 1, src: "/anthem-image.jpg", alt: "Gallery Image 1" },
+  { id: 2, src: "/cover.jpeg", alt: "Gallery Image 2" },
+  { id: 3, src: "/graduates.jpeg", alt: "Gallery Image 3" },
+  { id: 4, src: "/institute.jpg", alt: "Gallery Image 4" },
+  { id: 5, src: "/building.avif", alt: "Gallery Image 4" },
+  { id: 6, src: "/medal.jpeg", alt: "Gallery Image 4" },
+  { id: 7, src: "/arch.jpg", alt: "Gallery Image 4" },
+  { id: 8, src: "/me.jpg", alt: "Gallery Image 4" },
 ];
 
 export default function ImageGalleryPage() {
