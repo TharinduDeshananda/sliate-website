@@ -8,16 +8,19 @@ export default function MainContent() {
     // <div className="main-content">
     //   <NewsCard {...getData()[0]} />
     // </div>
-    <div className="main-content flex flex-row flex-wrap lg:flex-nowrap justify-center">
+    <div className="main-content flex flex-row flex-wrap lg:flex-nowrap justify-center ">
       <div className="flex-1">
         <h1 className="text-subheading text-center my-5">Latest Events</h1>
         <div className="w-full flex flex-row gap-2 flex-wrap justify-center min-w-[250px]">
+          {getData().map((i, index) => (
+            <NewsCard {...i} key={index} />
+          ))}
+          {/* <NewsCard {...getData()[0]} />
           <NewsCard {...getData()[0]} />
           <NewsCard {...getData()[0]} />
           <NewsCard {...getData()[0]} />
           <NewsCard {...getData()[0]} />
-          <NewsCard {...getData()[0]} />
-          <NewsCard {...getData()[0]} />
+          <NewsCard {...getData()[0]} /> */}
         </div>
         <PaginationComp />
       </div>
@@ -32,7 +35,7 @@ function getData() {
   const dummyData: NewsCardDataType[] = [
     {
       newsType: "Announcement",
-      image: "/main.jpg",
+      image: "/education1.jpg",
       title: "New Library Opening Hours",
       message:
         "Starting next week, the library will be open from 8 AM to 10 PM to accommodate student schedules.",
@@ -41,7 +44,7 @@ function getData() {
     },
     {
       newsType: "Event",
-      image: "/main.jpg",
+      image: "/education2.jpg",
       title: "Annual Science Fair 2024",
       message:
         "Join us for the Annual Science Fair featuring innovative projects by our talented students. Don’t miss it!",
@@ -50,7 +53,7 @@ function getData() {
     },
     {
       newsType: "Update",
-      image: "/main.jpg",
+      image: "/education3.jpg",
       title: "Campus Renovation Progress",
       message:
         "The renovation of the main hall is progressing as planned. It is expected to be completed by January 2025.",

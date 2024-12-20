@@ -12,7 +12,7 @@ export type NewsCardDataType = {
 
 export default function NewsCard(prop: Partial<NewsCardDataType>) {
   return (
-    <div className="w-full max-w-[200px] flex flex-col card overflow-hidden dark:border-gray-500 dark:shadow-gray-500">
+    <div className="w-full max-w-[200px] flex flex-col card overflow-hidden  dark:shadow-gray-500 border-transparent hover:border-blue-500 dark:hover:border-gray-500">
       {/* image container */}
       <div className="w-full aspect-square relative">
         <div className="absolute inset-0 bg-[rgba(0,0,0,0.5)] z-10"></div>

@@ -9,17 +9,17 @@ export default function SidePanel() {
         visible={true}
         items={[
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/lms-image.jpg",
             link: "",
             title: "LMS",
           },
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/library.jpg",
             link: "",
             title: "Library",
           },
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/counselling.jpg",
             link: "",
             title: "Counselling",
           },
@@ -30,17 +30,17 @@ export default function SidePanel() {
         visible={true}
         items={[
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/level1.jpg",
             link: "",
             title: "Year one",
           },
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/level2.jpg",
             link: "",
             title: "Year two",
           },
           {
-            backgroundImage: "/main.jpg",
+            backgroundImage: "/lab.jpg",
             link: "",
             title: "Laboratory",
           },

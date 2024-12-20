@@ -9,9 +9,9 @@ type ImageType = {
 };
 
 const images: ImageType[] = [
-  { imageLink: "/education1.jpg", title: "First Image" },
-  { imageLink: "/education2.jpg", title: "Second Image" },
-  { imageLink: "/education3.jpg", title: "Third Image" },
+  { imageLink: "/building.avif", title: "" },
+  { imageLink: "/cover.jpeg", title: "" },
+  { imageLink: "/anthem-image.jpg", title: "" },
 ];
 
 export default function CorousalComp() {
