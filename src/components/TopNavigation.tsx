@@ -17,7 +17,7 @@ export default function TopNavigation() {
           { link: "", title: "History" },
         ]}
       />
-      <NavItem link="#" title="Institutions" />
+      <NavItem link="institutions" title="Institutions" />
       <NavItem link="contact" title="Contact" />
       <NavItem link="#" title="Internal Circulars" />
       <NavItem link="faq" title="FAQ" />

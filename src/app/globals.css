@@ -79,6 +79,9 @@ body {
   .text-small {
     @apply text-xs;
   }
+  .text-heading {
+    @apply text-base sm:text-lg md:text-2xl color-text-primary
+  }
   .text-subheading {
     @apply text-lg font-bold;
   }
