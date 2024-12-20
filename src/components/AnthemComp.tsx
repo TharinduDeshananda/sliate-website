@@ -77,7 +77,7 @@ export default function AnthemComp() {
       // Reset status
       setStatus("PAUSED");
     }
-  }, [lang, audioSources]);
+  }, [lang]);
 
   // Effect to handle audio end
   useEffect(() => {
