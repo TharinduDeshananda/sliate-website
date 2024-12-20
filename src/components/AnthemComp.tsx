@@ -31,10 +31,8 @@ export default function AnthemComp() {
 
   // Audio sources
   const audioSources = {
-    SINHALA:
-      "https://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3",
-    TAMIL:
-      "https://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3",
+    SINHALA: "sinhala-anthem.mp3",
+    TAMIL: "tamil-anthem.mp3",
   };
 
   // Handle Play

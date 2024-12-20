@@ -1,8 +1,9 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
-const images = ["/education1.jpg", "/education2.jpg", "/education3.jpg"];
+const images = ["/anthem-image.jpg", "/cover.jpeg", "/building.avif"];
 
 export default function ImageGalleryComp() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -34,7 +35,9 @@ export default function ImageGalleryComp() {
         />
       ))}
       <div className="p-5  rounded-lg z-20 cursor-pointer card-hover bg-blue-600 dark:bg-gray-500 text-white">
-        <h1>View Gallery</h1>
+        <Link href={"/imagegallery"}>
+          <h1>View Gallery</h1>
+        </Link>
       </div>
     </div>
   );

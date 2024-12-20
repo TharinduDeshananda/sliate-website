@@ -15,7 +15,7 @@ const SingleInstitutePage = () => {
           <Image
             alt="Institute banner"
             fill
-            src={"/main.jpg"}
+            src={"/institute.jpg"}
             className="z-0"
             objectFit="cover"
           />
