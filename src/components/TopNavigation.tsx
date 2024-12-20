@@ -1,18 +1,37 @@
+"use client";
+import { Bars4Icon } from "@heroicons/react/24/outline";
+import { XMarkIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 export default function TopNavigation() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  function changeShowState() {
+    setShowMenu((c) => !c);
+  }
   return (
-    <div className="hidden w-full sm:flex flex-row items-center absolute top-full left-0 text-xs z-20">
-      <NavItem link="/" title="Home" />
-      <NavItem link="/about" title="About" />
-      <NavItem link="/news" title="News" />
-      <NavItem link="/courses" title="Courses" />
-      <NavItem link="/institutions" title="Institutions" />
-      <NavItem link="/contact" title="Contact" />
-      <NavItem link="/reports" title="Reports" />
-      <NavItem link="/faq" title="FAQ" />
-      <NavItem link="/vacancies" title="Vacancies" />
+    <div>
+      {showMenu && <FloatingMenu onClick={changeShowState} />}
+      <div className="absolute top-full left-0 z-50 sm:hidden">
+        <button
+          className="bg-blue-500 dark:bg-gray-500 p-2 rounded-full card-hover text-white"
+          onClick={changeShowState}
+        >
+          <Bars4Icon className="w-6 h-6" />
+        </button>
+      </div>
+      <div className="hidden w-full sm:flex flex-row items-center absolute top-full left-0 text-xs z-20">
+        <NavItem link="/" title="Home" />
+        <NavItem link="/about" title="About" />
+        <NavItem link="/news" title="News" />
+        <NavItem link="/courses" title="Courses" />
+        <NavItem link="/institutions" title="Institutions" />
+        <NavItem link="/contact" title="Contact" />
+        <NavItem link="/reports" title="Reports" />
+        <NavItem link="/faq" title="FAQ" />
+        <NavItem link="/vacancies" title="Vacancies" />
+      </div>
     </div>
   );
 }
@@ -53,6 +72,29 @@ function NavItem({ link, title, items = [] }: NavItemType) {
           ))}
         </div>
       )}
+    </div>
+  );
+}
+
+function FloatingMenu({ onClick = () => {} }: { onClick: () => void }) {
+  return (
+    <div className="w-full flex flex-col gap-y-2 z-[100] fixed bg-blue-700 dark:bg-gray-500">
+      <XMarkIcon
+        onClick={onClick}
+        className="rounded-full card-hover text-white w-8 h-8 cursor-pointer card-hover hover:bg-white hover:text-purple-500"
+      />
+
+      <div>
+        <NavItem link="/" title="Home" />
+        <NavItem link="/about" title="About" />
+        <NavItem link="/news" title="News" />
+        <NavItem link="/courses" title="Courses" />
+        <NavItem link="/institutions" title="Institutions" />
+        <NavItem link="/contact" title="Contact" />
+        <NavItem link="/reports" title="Reports" />
+        <NavItem link="/faq" title="FAQ" />
+        <NavItem link="/vacancies" title="Vacancies" />
+      </div>
     </div>
   );
 }
