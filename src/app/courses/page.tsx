@@ -79,7 +79,7 @@ function getCourses(): CourseType[] {
   return [
     {
       id: 1,
-      title: "Computer Science",
+      title: "HND IT",
       description:
         "Dive into the world of algorithms, data structures, and software development with our comprehensive Computer Science program.",
       imageUrl: "/cs.jpg",
@@ -87,7 +87,7 @@ function getCourses(): CourseType[] {
     },
     {
       id: 2,
-      title: "Business Administration",
+      title: "HND Business Administration",
       description:
         "Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.Learn the fundamentals of business, management, and entrepreneurship in our dynamic Business Administration course.",
       imageUrl: "/ba.jpg",
@@ -95,7 +95,7 @@ function getCourses(): CourseType[] {
     },
     {
       id: 3,
-      title: "Mechanical Engineering",
+      title: "HND Engineering",
       description:
         "Explore the principles of mechanics, thermodynamics, and materials science in our Mechanical Engineering program.",
       imageUrl: "me.jpg",
@@ -103,7 +103,7 @@ function getCourses(): CourseType[] {
     },
     {
       id: 4,
-      title: "Psychology",
+      title: "HND English",
       description:
         "Understand the complexities of human behavior and mental processes with our insightful Psychology course.",
       imageUrl: "psycho.jpg",
@@ -111,7 +111,7 @@ function getCourses(): CourseType[] {
     },
     {
       id: 5,
-      title: "Architecture",
+      title: "HND Architecture",
       description:
         "Design innovative structures and learn architectural principles in our creative Architecture program.",
       imageUrl: "arch.jpg",
