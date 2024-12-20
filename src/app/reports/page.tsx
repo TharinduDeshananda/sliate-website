@@ -1,4 +1,5 @@
 "use client";
+import PaginationComp from "@/components/Pagination";
 import React, { useState } from "react";
 
 type ReportType = {
@@ -56,6 +57,7 @@ export default function ReportsPage() {
         </div>
 
         {/* Report Cards */}
+        <PaginationComp />
         <div className="space-y-8">
           {filteredReports.length > 0 ? (
             filteredReports.map((report, index) => (
