@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
+import { useParams, usePathname, useSearchParams } from "next/navigation";
 import React, { useState } from "react";
 
 const SingleInstitutePage = () => {
   const [activeTab, setActiveTab] = useState("contact");
-
+  const params = useParams();
+  console.log(params);
   return (
     <div className="min-h-screen  px-4 sm:px-6 lg:px-8 w-full max-w-6xl mx-auto">
       <div className="w-full mx-auto  ">
@@ -22,7 +24,7 @@ const SingleInstitutePage = () => {
         {/* Branch Title and Description */}
         <div className="mb-8 z-20">
           <h2 className="text-3xl font-semibold text-blue-500 dark:text-gray-500 mb-4">
-            About Our Institute
+            About {params.institute} Institute
           </h2>
           <p className="text-gray-700 dark:text-gray-400">
             Welcome to the [Branch Name] branch of our institute. We are

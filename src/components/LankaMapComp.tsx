@@ -34,7 +34,7 @@ export default function LankaMapComp() {
             textElement.setAttribute("class", "hoverable-text");
             textElement.textContent = name;
             textElement.addEventListener("click", () => {
-              router.push(`/institutions/${id}`);
+              router.push(`/institutions/${name}`);
             });
             // Add hover and click effects
             textElement.addEventListener("mouseover", () => {
