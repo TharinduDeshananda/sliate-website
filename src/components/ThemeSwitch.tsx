@@ -15,7 +15,7 @@ export default function ThemeSwitch() {
   if (resolvedTheme == "dark")
     return (
       <button
-        className="fixed left-2 bottom-2 rounded-full w-12 h-12 bg-white p-3 border border-black"
+        className="fixed left-2 bottom-2 rounded-full w-12 h-12 bg-white p-3 border border-black z-50"
         onClick={() => {
           console.log("Light theme");
           setTheme("light");
@@ -34,7 +34,7 @@ export default function ThemeSwitch() {
 
   return (
     <button
-      className="fixed left-2 bottom-2 rounded-full w-12 h-12 bg-white p-3 border border-black"
+      className="fixed left-2 bottom-2 rounded-full w-12 h-12 bg-white p-3 border border-black z-50"
       onClick={() => {
         console.log("Dark theme");
 
