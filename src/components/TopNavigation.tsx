@@ -7,12 +7,12 @@ export default function TopNavigation() {
       <NavItem link="/" title="Home" />
       <NavItem link="/about" title="About" />
       <NavItem link="/news" title="News" />
-      <NavItem link="courses" title="Courses" />
-      <NavItem link="institutions" title="Institutions" />
-      <NavItem link="contact" title="Contact" />
-      <NavItem link="reports" title="Reports" />
-      <NavItem link="faq" title="FAQ" />
-      <NavItem link="vacancies" title="Vacancies" />
+      <NavItem link="/courses" title="Courses" />
+      <NavItem link="/institutions" title="Institutions" />
+      <NavItem link="/contact" title="Contact" />
+      <NavItem link="/reports" title="Reports" />
+      <NavItem link="/faq" title="FAQ" />
+      <NavItem link="/vacancies" title="Vacancies" />
     </div>
   );
 }
