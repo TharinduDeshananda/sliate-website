@@ -1,16 +1,11 @@
 "use client";
-import React, { useState, useEffect, useRef, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useIntersectionObserver } from "@uidotdev/usehooks";
 
 type CounterType = {
   endsAt: number;
   startsFrom: number;
   title: string;
-};
-
-type PropType = {
-  counters: CounterType[];
-  duration: number; // Duration for the animation in milliseconds
 };
 
 export default function CounterComp() {

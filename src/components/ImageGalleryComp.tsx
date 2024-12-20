@@ -7,7 +7,7 @@ const images = ["/anthem-image.jpg", "/cover.jpeg", "/building.avif"];
 
 export default function ImageGalleryComp() {
   const [currentImage, setCurrentImage] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [, setIsTransitioning] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {

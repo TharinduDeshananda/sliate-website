@@ -39,7 +39,7 @@ const data: DataType[] = [
 
 export default function MissionCard() {
   const [show, setShow] = useState(0);
-  const [cards, setCards] = useState(data);
+  const [cards] = useState(data);
   return (
     <div
       className="max-w-3xl  mx-auto  border-2  rounded-xl px-2 py-5 pb-20  relative mb-10"

@@ -24,7 +24,7 @@ type NavItemType = {
   items?: NavItemType[];
 };
 
-function NavItem({ link, title, active = false, items = [] }: NavItemType) {
+function NavItem({ link, title, items = [] }: NavItemType) {
   return (
     <div className="relative group overflow-hidden">
       <Link href={link} className="relative group ">

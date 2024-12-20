@@ -83,7 +83,7 @@ const Pagination: React.FC<PaginationProps> = ({
   };
 
   // State to track screen size
-  const [isMobile, setIsMobile] = useState(
+  const [, setIsMobile] = useState(
     typeof window !== "undefined" ? window.innerWidth < 640 : false
   );
 

@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/components/ThemeProvider";
 import ThemeSwitch from "@/components/ThemeSwitch";
-import AnimatedBackground from "@/components/AnimatedBackground";
 import HeaderComp from "@/components/HeaderComp";
 import Footer from "@/components/FooterComp";
 

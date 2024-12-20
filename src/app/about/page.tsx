@@ -1,5 +1,4 @@
 import GoogleMapComponent from "@/components/GoogleMapComponent ";
-import TopNavigation from "@/components/TopNavigation";
 import React from "react";
 
 export default function AboutPage() {
