@@ -1,9 +1,10 @@
 "use client";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useRef } from "react";
 
 export default function LankaMapComp() {
   const svgRef = useRef<SVGSVGElement>(null);
-
+  const router = useRouter();
   useEffect(() => {
     if (svgRef.current) {
       const svg = svgRef.current;
@@ -32,7 +33,9 @@ export default function LankaMapComp() {
             textElement.setAttribute("font-size", "10");
             textElement.setAttribute("class", "hoverable-text");
             textElement.textContent = name;
-
+            textElement.addEventListener("click", () => {
+              router.push(`/institutions/${id}`);
+            });
             // Add hover and click effects
             textElement.addEventListener("mouseover", () => {
               path.classList.add("highlighted-path");
@@ -40,10 +43,6 @@ export default function LankaMapComp() {
 
             textElement.addEventListener("mouseout", () => {
               path.classList.remove("highlighted-path");
-            });
-
-            textElement.addEventListener("click", () => {
-              alert(`Clicked on ${name}`);
             });
 
             svg.appendChild(textElement);
